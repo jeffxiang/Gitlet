@@ -1,0 +1,23 @@
+# Basic initialization, add, commit, and rm
+> init
+<<<
+E .gitlet
+E .gitlet/serialized
+E .gitlet/staged
++ wug.txt wug.txt
++ notwug.txt notwug.txt
+> add wug.txt
+<<<
+> add notwug.txt
+<<<
+E .gitlet/staged/wug.txt
+= .gitlet/staged/wug.txt wug.txt
+E .gitlet/staged/notwug.txt
+= .gitlet/staged/notwug.txt notwug.txt
+> commit message
+<<<
+* .gitlet/staged/wug.txt
+* .gitlet/staged/notwug.txt
+> rm wug.txt
+<<<
+* .gitlet/wug.txt
